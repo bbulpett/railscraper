@@ -1,0 +1,7 @@
+<h1>China's Latest Celebrity Buzz!</h1>
+<ul>
+<% @headlinesArray.each do |h| %>
+		<li><%= link_to h.title, "http://www.chinadaily.com.cn/entertainment/" + h.link %></li>
+		<!-- <li><a href = "http://www.chinadaily.com.cn/entertainment/" + <%h.link%>><%= h.title %></a></li> -->
+<% end %>
+</ul>
